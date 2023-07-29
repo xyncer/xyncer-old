@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <html lang="en-GB">
       <head>
-        <title>Shlef - Login</title>
+        <title>Xyncer - Login</title>
         <link
           rel="icon"
           href="https://www.svgrepo.com/show/396470/file-folder.svg"
@@ -43,16 +43,16 @@ export default function Home() {
                     <h1
                       className="mt-6 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl md:text-4xl"
                     >
-                      Welcome to Shlef 👋
+                      Welcome to Xyncer 👋
                     </h1>
 
                     <p
                       className="mt-4 leading-relaxed text-gray-500 dark:text-gray-400"
                     >
                       Share and manage files within your organisation with ease.
-                      Shlef is a simple, self-hostable, and secure file sharing
+                      Xyncer is a simple, self-hostable, and secure file sharing
                       platform. Say goodbye to third-party file sharing services,
-                      and say hello the the future. Shlef. Security, by design.
+                      and say hello the the future. Xyncer. Security, by design.
                     </p>
 
                     <form action="#" className="mt-8 grid grid-cols-6 gap-6">
