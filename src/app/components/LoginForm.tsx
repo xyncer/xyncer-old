@@ -9,13 +9,22 @@ const LoginForm = () => {
 
     const login = () => {
         console.log(username, password, keepLoggedIn);
+
+        fetch("api/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                username,
+                password,
+                keepLoggedIn
+            })
+        })
     }
 
     return (
-        <form className="mt-8 grid grid-cols-6 gap-6" onSubmit={(e) => {
-            e.preventDefault();
-            login();
-        }}>
+        <form className="mt-8 grid grid-cols-6 gap-6">
             <div className="col-span-6 sm:col-span-3">
                 <label
                     htmlFor="FirstName"
@@ -71,6 +80,10 @@ const LoginForm = () => {
             <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
                 <button
                     className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 dark:hover:bg-blue-700 dark:hover:text-white"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        login();
+                    }}
                 >
                     Go!
                 </button>
