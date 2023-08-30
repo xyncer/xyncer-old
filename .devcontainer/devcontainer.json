@@ -22,7 +22,7 @@
     }
   },
   "onCreateCommand": "npm install",
-  "postStartCommand": "npm start --port 3000",
+  "postStartCommand": "npm run dev --port 3000",
   "forwardPorts": [
         3000
   ],
